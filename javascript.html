@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+	var x;
+	var y= Math.floor((Math.random()*10)+1);
+	x=window.prompt("Please enter a number from 1 to 10:");
+	while(x!=y){
+		
+		x=window.prompt("Please guess again!");
+		checkCorrespond(x,y);
+		
+
+	}
+checkCorrespond(x,y);
+	
+	function checkCorrespond(x,y){
+		if(x==y){
+			return alert("Congrdulations! You got the right answer.");
+		}
+		else{
+			x=window.prompt("Please guess again!");
+			return x;
+		}
+	}
+
+	
+
+</script>
+
+</body>
+</html>
